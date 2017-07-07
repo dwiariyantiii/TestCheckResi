@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RDash">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>REX Kiriman Express</title>
+<link rel="shortcut icon" href="/stylesheets/img/faviconrex.ico">
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/thema/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/stylesheets/thema/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="/stylesheets/rex.css" rel="stylesheet">
+    <link href="/stylesheets/thema/css/agency.min.css" rel="stylesheet">
+
+
+       <!-- jquery Scripts -->
+    <script type='text/javascript' src="/javascripts/angular/plugins/jquery/old/jquery-1.9.1.min.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/jquery/old/jquery-migrate-1.1.0.min.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/jquery/dist/jquery.min.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/DataTables/media/js/jquery.dataTables.min.js"></script>
+
+    <!--angular library-->
+    <script type='text/javascript' src="/javascripts/angular/plugins/angular/angular.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/angular/ocLazyLoad.min.js"></script>
+    <script type="text/javascript" src="/javascripts/angular/plugins/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type='text/javascript' src="/javascripts/angular/plugins/angular/angular-resource.js"></script>
+
+
+    <!--plugins-->
+    <script type='text/javascript' src="/javascripts/angular/route.js"></script>
+
+   
+
+</head>
+
+<body id="page-top" ng-controller="mastercontroller" class="index"> 
+  <div  role="main" ui-view>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+               <img src="/stylesheets/img/logo.jpg" class="logo">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#trace">Trace and Tracking</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Company Profile</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Our Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+
+    </header>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			    <div class="item active">
+			    	<img src="/stylesheets/Maxim/img/bg/bg-3.jpg" alt="First slide">
+                    <!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                           
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			    <div class="item">
+			    	<img src="/stylesheets/Maxim/img/bg/bg-1.jpg" alt="Second slide">
+			    	<!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                          
+
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			    <div class="item">
+			    	<img src="/stylesheets/Maxim/img/bg/bg-2.jpg" alt="Third slide">
+			    	<!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            
+
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			</div>
+		
+	</div>
+    <!-- Services Section -->
+    <section id="trace">
+        <div class="container">
+        <div class="price-box">
+        <div class="row">
+          <div class="col-md-12">
+                <form class="form-horizontal form-pricing" role="form">
+
+                  <div class="price-slider">
+                    <h4 class="great">Trace and Tracking</h4>
+                    
+                    <div class="col-sm-12">
+                      <div id="slider_amirol">
+                        <form class="">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label>Example: 123</label>
+                                    <input type="text" ng-model="track.noawb" class="form-control" placeholder="No.Resi / Booking">
+                                </div>
+                            </div>
+                           
+                            <div class="col-md-2" style="padding-left:4px;">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" ng-click="btntrackclick()">Track</button>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                 
+                 
+                  <div class="price-slider" ng-show="showtracking">
+                   
+                    <div class="col-sm-12" style="padding-left:0;padding-right:0;padding-top:15px;">
+                      <div id="slider_amirol">
+                        <form class="">
+                      
+                                 <div class="table-responsive">
+                                    <table id="data-table" datatable="ng" dt-options="dtOptions" width="100%" class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr style="background:#0c524a">
+                                                <th style="width: 34px;color:white">No.AWB</th>
+                                                <th colspan="6" style="color:white">{{NoAwb}}</th>
+                                            </tr>
+                                            <tr style="background:#0c524a">
+                                                <th style="color:white">Services</th>
+                                                <th style="color:white">Origin</th>
+                                                <th style="color:white">Destination</th>
+                                                <th style="color:white">Consignee</th>
+                                                <th style="color:white">Date Received</th>
+                                                <th style="color:white">Receiver</th>
+                                                <th style="color:white">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="item in lastdata">
+                                                <td>{{item.Services}}</td>
+                                                <td>{{item.Origin}}</td>
+                                                <td>{{item.Destination}}</td>
+                                                <td>{{item.Consignee}}</td>
+                                                <td>{{item.DateReceived}}</td>
+                                                <td>{{item.Receiver}}</td>
+                                                <td>{{item.Status}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7" style="background:#0c524a">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                 <td colspan="7">
+                                                     SHIPMENT STATUS
+                                                </td>
+                                            </tr>
+
+                                            <tr style="background:white" ng-repeat="item in listtrack">
+                                                <td colspan="2">{{item.DateReceived}}</td>
+                                                <td colspan="2">{{item.Destination}}</td>
+                                                <td colspan="3">{{item.Status}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                 
+                        </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <br>
+          </div>
+         
+        </div>
+        </div>
+        
+        <div class="price-box">
+        <div class="row">
+          <div class="col-sm-12">
+                <form class="form-horizontal form-pricing" role="form">
+
+                  <div class="price-slider">
+                    <h4 class="great">Calculate Cost</h4>
+                   
+                    <div class="col-sm-12">
+                    <div id="slider_amirol">
+                    <form class="">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Origin">
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="Destination">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="1">
+                              
+                                </div>
+                            </div>
+                            <div class="col-md-2" style="padding-left:4px;">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary ">Check</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    </div>
+                  </div>
+                 
+                </form>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br> 
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">COMPANY PROFILE</h2>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+               
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:white">Our Service</h2>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    
+    <!-- Contact Section -->
+    <section id="contact" style="background:#eeeeee">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:black">Contact Us</h2>
+                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:#0c524a">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright" style="color:white">Copyright &copy; REX Kiriman Express 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- jQuery -->
+    <script src="/stylesheets/thema/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/stylesheets/thema/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/stylesheets/thema/js/jqBootstrapValidation.js"></script>
+    <script src="/stylesheets/thema/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="/stylesheets/thema/js/agency.min.js"></script>
+
+
+    <!--service-->
+    <script src="/javascripts/angular/services/common.service.js"></script>
+    <script src="/javascripts/angular/services/passingdata.service.js"></script>
+    <script src="/javascripts/angular/services/track.service.js"></script>
+
+
+    <!--controller-->
+    <script src="/javascripts/angular/controllers/Master.js"></script>
+
+  </div>
+</body>
+
+</html>
+
+
+
